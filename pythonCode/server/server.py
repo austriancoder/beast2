@@ -3,8 +3,7 @@ import os
 
 from tornado import websocket, web, ioloop
 import pigpio
-import pythonCode.database.databaseConnection as dbc
-
+from database import database as dbc
 
 cl = []
 componentstatus = []
