@@ -92,7 +92,8 @@
 
 
 <script>
-    var ws = new WebSocket('ws://192.168.1.2:8080/ws');
+    var host = location.host;
+    var ws = new WebSocket('ws://' + host + '/ws');
     var $message = $('#message');
     var data;
     var arr = new Array(30);
