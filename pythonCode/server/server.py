@@ -3,7 +3,7 @@ import os
 
 from tornado import websocket, web, ioloop
 
-import pythonCode.database.databaseConnection as dbc
+import pythonCode.server.databaseConnection as dbc
 
 
 cl = []
