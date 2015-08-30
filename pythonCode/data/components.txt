@@ -2,49 +2,49 @@
     {
         "status": 0,
         "name": "Light Bed",
-        "type": "Light",
-        "id": "1",
         "compid": 1,
-        "address": "10001"
+        "id": "1",
+        "address": "10001",
+        "type": "Light"
     },
     {
         "status": 0,
         "name": "Rnd",
-        "type": "Socket",
-        "id": "1",
         "compid": 2,
-        "address": "10001"
+        "id": "1",
+        "address": "10001",
+        "type": "Socket"
     },
     {
         "status": 1,
         "name": "SocketTV",
-        "type": "Socket",
-        "id": "1",
         "compid": 3,
-        "address": "10001"
+        "id": "1",
+        "address": "10001",
+        "type": "Socket"
     },
     {
         "status": 0,
         "name": "socket1",
-        "type": "Socket",
-        "id": "1",
         "compid": 4,
-        "address": "10001"
+        "id": "1",
+        "address": "10001",
+        "type": "Socket"
     },
     {
         "status": 1,
         "name": "socket2",
-        "type": "Socket",
-        "id": "1",
         "compid": 5,
-        "address": "10001"
+        "id": "1",
+        "address": "10001",
+        "type": "Socket"
     },
     {
         "status": 1,
         "name": "light1",
-        "type": "Light",
-        "id": "1",
         "compid": 6,
-        "address": "10001"
+        "id": "1",
+        "address": "10001",
+        "type": "Light"
     }
 ]

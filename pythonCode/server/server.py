@@ -1,8 +1,9 @@
+import json
+import os
+
 from tornado import websocket, web, ioloop
-import json, os
-import database.databaseConnection as dbc
-import time
-import pigpio
+
+import pythonCode.database.databaseConnection as dbc
 
 
 cl = []
@@ -10,7 +11,7 @@ componentstatus = []
 
 class IndexHandler(web.RequestHandler):
     def get(self):
-        self.render("..\\web\\index.html")
+        self.render("..\\..\\web\\index.html")
 
 
 class SocketHandler(websocket.WebSocketHandler):
@@ -68,13 +69,13 @@ class ApiHandler(web.RequestHandler):
         pass
 
 settings = dict(
-    static_path=os.path.join(os.path.dirname(__file__), "../web/static"),
+    static_path=os.path.join(os.path.dirname(__file__), "../../web/static"),
 )
 
 app = web.Application([
     (r'/', IndexHandler),
     (r'/ws', SocketHandler),
-    (r'/(favicon.ico)', web.StaticFileHandler, {'path': '../web/static/images/'}),
+    (r'/(favicon.ico)', web.StaticFileHandler, {'path': '../../web/static/images/'}),
 ], **settings)
 
 
