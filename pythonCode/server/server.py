@@ -1,5 +1,6 @@
 import json
 import os
+import argparse
 
 from tornado import websocket, web, ioloop
 import pigpio
@@ -86,13 +87,19 @@ def decodejson():
  #       componentstatus.append(0)
   #  return data
     data=""
-    with open ("../data/components.txt", "r") as myfile:
-        data= myfile.read().replace('\n', '')
+    with open (args.datafile, "r") as file:
+        data= file.read().replace('\n', '')
         data = data.replace(' ','')
     return data
 
 if __name__ == '__main__':
-    app.listen(8080)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("datafile", help="location to the datafile")
+    parser.add_argument("port", type=int, nargs='?', default=8080, help="port for web application")
+    args = parser.parse_args()
+
+    dbc.datafile = args.datafile
+    app.listen(args.port)
     ioloop.IOLoop.instance().start()
 
 

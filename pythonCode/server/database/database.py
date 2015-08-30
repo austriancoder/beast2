@@ -6,6 +6,7 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 db_path = os.path.join(BASE_DIR, "test.db")
+datafile = "";
 
 # Create table
 #c.execute('''DROP TABLE components2''')
@@ -53,7 +54,7 @@ def writeComponentsToJsonFile():
     recs = c.fetchall()
     rows = [dict(rec) for rec in recs]
 
-    with open("../data/components.txt", "w") as outfile:
+    with open(datafile, "w") as outfile:
         json.dump(rows,outfile,indent=4)
 
     conn.close()
