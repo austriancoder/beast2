@@ -2,8 +2,8 @@ import json
 import os
 
 from tornado import websocket, web, ioloop
-
-import pythonCode.server.databaseConnection as dbc
+import pigpio
+import pythonCode.database.databaseConnection as dbc
 
 
 cl = []
@@ -11,7 +11,7 @@ componentstatus = []
 
 class IndexHandler(web.RequestHandler):
     def get(self):
-        self.render("..\\..\\web\\index.html")
+        self.render("../../web/index.html")
 
 
 class SocketHandler(websocket.WebSocketHandler):

@@ -1,50 +1,50 @@
 [
     {
-        "name": "Light Bed",
-        "address": "10001",
-        "type": "Light",
         "id": "1",
         "compid": 1,
-        "status": 0
+        "name": "Light Bed",
+        "type": "Light",
+        "status": 0,
+        "address": "10001"
     },
     {
-        "name": "Rnd",
-        "address": "10001",
-        "type": "Socket",
         "id": "1",
         "compid": 2,
-        "status": 0
+        "name": "Rnd",
+        "type": "Socket",
+        "status": 0,
+        "address": "10001"
     },
     {
-        "name": "SocketTV",
-        "address": "10001",
-        "type": "Socket",
         "id": "1",
         "compid": 3,
-        "status": 1
+        "name": "SocketTV",
+        "type": "Socket",
+        "status": 0,
+        "address": "10001"
     },
     {
-        "name": "socket1",
-        "address": "10001",
-        "type": "Socket",
         "id": "1",
         "compid": 4,
-        "status": 0
+        "name": "socket1",
+        "type": "Socket",
+        "status": 0,
+        "address": "10001"
     },
     {
-        "name": "socket2",
-        "address": "10001",
-        "type": "Socket",
         "id": "1",
         "compid": 5,
-        "status": 1
+        "name": "socket2",
+        "type": "Socket",
+        "status": 1,
+        "address": "10001"
     },
     {
-        "name": "light1",
-        "address": "10001",
-        "type": "Light",
         "id": "1",
         "compid": 6,
-        "status": 1
+        "name": "light1",
+        "type": "Light",
+        "status": 1,
+        "address": "10001"
     }
 ]
